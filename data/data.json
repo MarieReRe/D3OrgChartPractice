@@ -1,0 +1,114 @@
+[
+    {
+      "Id": 1,
+      "Name": "Brookline Companies",
+      "Entities": [
+        {
+          "Id": 1,
+          "Name": "R&E",
+          "Assets": [
+            {
+              "Id": 1,
+              "Type": 10,
+              "UnitCount": 9,
+              "RentableSqFt": 16600,
+              "AcquisitionDate": "2016-02-01T00:00:00",
+              "Name": "700 Raccoon Road (52401)",
+              "City": "Cedar Rapids",
+              "State": "IA",
+              "PostalCode": "52401"
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "Name": "Fletcher",
+          "Assets": [
+            {
+              "Id": 3,
+              "Type": 40,
+              "UnitCount": 3,
+              "RentableSqFt": 42800,
+              "AcquisitionDate": "2014-06-01T00:00:00",
+              "Name": "100 - 400 Cardinal Road (52402)",
+              "City": "Cedar Rapids",
+              "State": "IA",
+              "PostalCode": "52402"
+            },
+            {
+              "Id": 4,
+              "Type": 30,
+              "UnitCount": 2,
+              "RentableSqFt": 12000,
+              "AcquisitionDate": "2014-01-01T00:00:00",
+              "Name": "5200 Bluebird Road (52403)",
+              "City": "Cedar Rapids",
+              "State": "IA",
+              "PostalCode": "52403"
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "Name": "Lionfish",
+          "Assets": [
+            {
+              "Id": 5,
+              "Type": 10,
+              "UnitCount": 4,
+              "RentableSqFt": 7000,
+              "AcquisitionDate": "2016-11-15T00:00:00",
+              "Name": "4500 Chickadee Lane (52240)",
+              "City": "Iowa City",
+              "State": "IA",
+              "PostalCode": "52240"
+            }
+          ]
+        },
+        {
+          "Id": 4,
+          "Name": "Jones",
+          "Assets": [
+            {
+              "Id": 6,
+              "Type": 30,
+              "UnitCount": 5,
+              "RentableSqFt": 53400,
+              "AcquisitionDate": "2016-12-01T00:00:00",
+              "Name": "4925 Prairie Road (52317)",
+              "City": "North Liberty",
+              "State": "IA",
+              "PostalCode": "52317"
+            },
+            {
+              "Id": 109,
+              "Type": 10,
+              "UnitCount": 4,
+              "RentableSqFt": 3600,
+              "AcquisitionDate": "2014-09-01T00:00:00",
+              "Name": "1200 Murray ST NE (52402)",
+              "City": "Cedar Rapids",
+              "State": "IA",
+              "PostalCode": "52402"
+            },
+            {
+              "Id": 110,
+              "Type": 40,
+              "UnitCount": 3,
+              "RentableSqFt": 9900,
+              "AcquisitionDate": "2015-05-01T00:00:00",
+              "Name": "3519 Partridge Parkway (52402)",
+              "City": "Cedar Rapids",
+              "State": "IA",
+              "PostalCode": "52402"
+            }
+          ]
+        },
+        {
+          "Id": 451,
+          "Name": "Newfoundland",
+          "Assets": []
+        }
+      ]
+    }
+  ]
