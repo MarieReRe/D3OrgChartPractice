@@ -1,5 +1,4 @@
-[
-    {
+{
       "Id": 1,
       "Name": "Brookline Companies",
       "Entities": [
@@ -111,4 +110,3 @@
         }
       ]
     }
-  ]
