@@ -32,7 +32,8 @@ d3.json('/data/data.json').get(function(error, data){
                     .attr("stroke", "black")
                     .attr("fill", "blue")
                     .append("text")
-                    .text(function(d) { return d.Name; }) ;
+                    .text(function(d) {
+                        console.log(d); return d.Entities; }) ;
                     
         
  
