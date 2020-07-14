@@ -16,7 +16,7 @@ d3.json('/data/data.json').get(function (error, data) {
     var chartGroup = svg.append('g')
         .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
 
-   
+
 
     var root = d3.hierarchy(data, function (d) {
 
@@ -33,15 +33,15 @@ d3.json('/data/data.json').get(function (error, data) {
         .attr("d", function (d) {
             return "M" + d.parent.x + "," + d.parent.y + "L" + d.x + "," + d.y;
         });
-    
- var circleShell = chartGroup.append('g');
+
+    var circleShell = chartGroup.append('g');
 
     circleShell.selectAll('g')
         //should be an array of nodes
         .data(root.descendants())
-        .enter().append("g")
+        .enter().append("g");
 
-        circleShell.selectAll('g')
+    circleShell.selectAll('g')
         .append('circle')
         .attr("cx", function (d) { return d.x; })
         .attr("cy", function (d) { return d.y; })
@@ -50,7 +50,17 @@ d3.json('/data/data.json').get(function (error, data) {
         .attr("fill", "pink")
 
 
-    
+    var labels = chartGroup.selectAll('g')
+        .append('text')
+        .attr("text-anchor", "middle")
+        .attr("dx", function(d){return -20})
+        .attr("font-size", 10)
+        .text(function (d) { console.log(d); return d; })
+
+  
+
+
+
 
 
 
