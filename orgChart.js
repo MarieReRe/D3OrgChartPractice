@@ -31,7 +31,7 @@ d3.json('/data/data.json').get(function (error, data) {
         .attr("stroke", "grey")
         .attr("class", "link")
         .attr("d", function (d) {
-            return "M" + d.parent.x + "," + d.parent.y + "L" + d.x + "," + d.y;
+            return "M" + d.parent.x + "," + d.parent.y + "L" + d.x  + "," + d.y;
         });
 
     var circleShell = chartGroup.append('g');
@@ -43,7 +43,7 @@ d3.json('/data/data.json').get(function (error, data) {
 
     circleShell.selectAll('g')
         .append('circle')
-        .attr("cx", function (d) { return d.x; })
+        .attr("cx", function (d) { return d.x ; })
         .attr("cy", function (d) { return d.y; })
         .attr("r", "30")
         .attr("stroke", "black")
@@ -53,9 +53,10 @@ d3.json('/data/data.json').get(function (error, data) {
     var labels = chartGroup.selectAll('g')
         .append('text')
         .attr("text-anchor", "middle")
-        .attr("dx", function(d){return -20})
+        .attr("dx", function(d, i){return (d && d.x )})
+        .attr("dy", function(d){return (d && d.y)})
         .attr("font-size", 10)
-        .text(function (d) { console.log(d); return d; })
+        .text(function (d) { console.log(d); return d && d.data && d.data.Name; })
 
   
 
