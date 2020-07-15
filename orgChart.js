@@ -1,8 +1,8 @@
-var height = 500;
-var width = 1000;
-var margin = { left: 50, right: 50, top: 40, bottom: 0 };
+var height = 1000;
+var width = 3000;
+var margin = { left: 50, right: 50, top: 100, bottom: 0 };
 
-var tree = d3.tree().size([width - 100, height - 100]);
+var tree = d3.tree().size([width - 400, height - 400]);
 
 var svg = d3.select("body").append("svg")
     .attr("height", height)
@@ -31,7 +31,7 @@ d3.json('/data/data.json').get(function (error, data) {
         .attr("stroke", "grey")
         .attr("class", "link")
         .attr("d", function (d) {
-            return "M" + d.parent.x + "," + d.parent.y + "L" + d.x  + "," + d.y;
+            return "M" + d.parent.x + "," + d.parent.y + "L" + d.x + "," + d.y;
         });
 
     var circleShell = chartGroup.append('g');
@@ -43,9 +43,9 @@ d3.json('/data/data.json').get(function (error, data) {
 
     circleShell.selectAll('g')
         .append('circle')
-        .attr("cx", function (d) { return d.x ; })
+        .attr("cx", function (d) { return d.x; })
         .attr("cy", function (d) { return d.y; })
-        .attr("r", "30")
+        .attr("r", "70")
         .attr("stroke", "black")
         .attr("fill", "pink")
 
@@ -53,7 +53,7 @@ d3.json('/data/data.json').get(function (error, data) {
     var labels = chartGroup.selectAll('g')
         .append('text')
         .attr("text-anchor", "middle")
-        .attr("dx", function(d, i){return (d && d.x )})
+        .attr("dx", function(d, i){return (d && d.x)})
         .attr("dy", function(d){return (d && d.y)})
         .attr("font-size", 10)
         .text(function (d) { console.log(d); return d && d.data && d.data.Name; })
